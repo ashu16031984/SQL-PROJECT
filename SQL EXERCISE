@@ -1,0 +1,11 @@
+1. Write a query in SQL to find the name and year of the movies.
+select mov_name, mov_year from Movies_Project(code line)
+2.Write a query in SQL to find the year when the movie American Beauty
+released.
+select mov_year from Movies_Project
+where mov_name like 'American%'
+(SELECT mov_year AS ReleasedYear FROM Movies WHERE mov_name = 'American Beauty')(code when we use like key word, we are intended to get something content which contains coined term)
+3. Write a query in SQL to find the movie which was released in the year
+1999.
+SELECT mov_name FROM  Movies_Project
+WHERE mov_year=1999
